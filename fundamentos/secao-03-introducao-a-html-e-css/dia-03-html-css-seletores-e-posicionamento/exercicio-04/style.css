@@ -1,0 +1,39 @@
+div:hover{
+  border: 3px solid brown;
+}
+
+div:nth-of-type(1){
+  background-color: blue;
+}
+div:nth-of-type(2){
+  background-color: purple;
+}
+div:nth-of-type(3){
+  background-color: red;
+}
+div:nth-of-type(4){
+  background-color: black;
+}
+div:nth-last-of-type(1){
+  background-color: yellow;
+}
+
+div:nth-of-type(1) > h3{
+  color: aquamarine;
+}
+div:nth-of-type(2) > h3{
+  color: rgb(237, 210, 100);
+}
+div:nth-of-type(3) > h3{
+  color: darksalmon;
+}
+div:nth-of-type(4) > h3{
+  color: white;
+}
+div:nth-of-type(5) > h3{
+  color: rgb(99, 71, 3);
+}
+/* - Faça cada div ter uma cor própria.
+- Estilize cada uma das tags `h3`.
+- Faça a terceira `div` ser maior que as demais.
+- Deixe as tags ímpares `h3` com o texto em itálico. */
