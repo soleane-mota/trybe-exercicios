@@ -26,6 +26,7 @@ div:nth-of-type(2) > h3{
 }
 div:nth-of-type(3) > h3{
   color: darksalmon;
+  font-size: 30px;
 }
 div:nth-of-type(4) > h3{
   color: white;
@@ -33,7 +34,7 @@ div:nth-of-type(4) > h3{
 div:nth-of-type(5) > h3{
   color: rgb(99, 71, 3);
 }
-/* - Faça cada div ter uma cor própria.
-- Estilize cada uma das tags `h3`.
-- Faça a terceira `div` ser maior que as demais.
-- Deixe as tags ímpares `h3` com o texto em itálico. */
+
+div:nth-child(2n+1) > h3 {
+  font-style: italic;
+}
