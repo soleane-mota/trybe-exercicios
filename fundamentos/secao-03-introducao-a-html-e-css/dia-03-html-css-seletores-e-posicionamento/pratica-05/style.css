@@ -36,3 +36,31 @@ li em{
   background-color: pink;
 }
 /* (Bônus) Para cada link na lista de aliados da pessoa desenvolvedora, faça com que ao passar o mouse sobre cada um, o texto fique em negrito e assuma a cor de fonte “temática do site” */
+#ally li a:hover {
+  font-weight: bold;
+}
+
+#ally li a[href="https://pt.stackoverflow.com/"] {
+  color: rgb(255, 145, 0);
+  text-decoration: none;
+}
+
+#ally li a[href="https://www.w3schools.com/"] {
+  color: green;
+  text-decoration: none;
+}
+
+#ally li a[href="https://developer.mozilla.org/pt-BR/"] {
+  color: black;
+  text-decoration: none;
+}
+
+#ally li a[href="https://devdocs.io/"] {
+  color: yellow;
+  text-decoration: none;
+}
+
+#ally li a[href="https://app.betrybe.com/"] {
+  color: green;
+  text-decoration: none;
+}
