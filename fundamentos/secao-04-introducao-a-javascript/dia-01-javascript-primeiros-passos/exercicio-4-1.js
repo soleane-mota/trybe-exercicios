@@ -54,14 +54,62 @@ function triangle() {
 
 	const a = 180;
 	const b = 90;
-	const c = 1;
+	const c = -1;
 	
-	if ((b - c) < a && a < (b + c) || (a - c) < b && b < (a + c) || (a - b) < c && c < (a + b)) {
+	if ((a + b + c) == 180) {
 		return true;
 	} else if (typeof(a) !== 'number'  || typeof(b) !== 'number' || typeof(c) !== 'number') {
 		return 'Erro! Valor inválido';
-	} else {
-		return false;
+	} else if (Math.round(a) < 0 || Math.round(b) || Math.round(c)) {
+		return 'Erro! Valor inválido';
 	}
+		return false;
 }
 console.log(triangle());
+
+// Utilize switch/case para fazer um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
+	// Como desafio, faça o programa funcionar tanto se receber o nome de uma peça com letras maiúsculas quanto com letras minúsculas, sem aumentar a quantidade de condicionais.
+	// Se a peça passada for inválida, o programa deve retornar uma mensagem de erro.
+	// Exemplo: bishop (bispo) -> diagonals (diagonais)
+let pecaXadrez = 'torre';
+let movimento = '';
+
+switch (toLowerCase(pecaXadrez)) {
+	case 'rei':
+		movimento = 'horizontal, vertical e diagonal, sendo uma casa por vez';
+		break;
+	case 'rainha':
+		movimento = 'horizontal, vertical e diagonais mas não pode pular outras peças';
+		break;
+	case 'bispo':
+		movimento = 'diagonal. Não pode pular outras peças.';
+		break;
+	case 'cavalo':
+		movimento = 'em forma de “L”, duas casas em sentido horizontal e mais uma na vertical ou vice-versa';
+		break;
+	case 'torre':
+		movimento = 'vertical ou horizontal, mas não pode pular outras peças';
+		break;
+	case 'peão':
+		movimento = 'uma casa para frente (duas casas se for o primeiro movimento) e somente captura outras peças na diagonal';
+		break;
+	default:
+		movimento = 'Erro! Peça inválida.';
+}
+
+console.log(movimento);
+
+// Utilize if/else para fazer um programa que converta uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga essas regras:
+// Porcentagem >= 90 -> A
+
+// Porcentagem >= 80 -> B
+
+// Porcentagem >= 70 -> C
+
+// Porcentagem >= 60 -> D
+
+// Porcentagem >= 50 -> E
+
+// Porcentagem < 50 -> F
+
+// O programa deve retornar uma mensagem de erro e encerrar se a nota passada for menor que 0 ou maior que 100.
