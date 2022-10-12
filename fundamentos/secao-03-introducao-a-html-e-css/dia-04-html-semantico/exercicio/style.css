@@ -32,29 +32,6 @@ nav a{
   /* border: 1px solid black;  */
 }
 
-article {
-  border: 1px solid black;
-  padding: 20px;
-}
-
-h2, h3 {
-  /* border: 1px solid black; */
-  /* margin: 0px 0 10px; */
-  padding: 5px 0;
-}
-
-img {
-  width: 300px;
-}
-
-.curiosity {
-  display: inline-block;
-  width: 30%;
-  margin-right: 10px;
-  padding: 20px 0;
-  vertical-align:text-top;
-}
-
 aside {
   background-color:blue;
   margin: 10px;
@@ -67,4 +44,50 @@ aside {
 aside a{
   color: white;
   font-size: x-large;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 30px;
+  flex-grow: 1;
+}
+
+article {
+  width: 66%;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+h2, h3 {
+  margin: 0 0 20px;
+}
+
+img {
+  width: 300px;
+}
+
+.curiosity {
+  display: inline-block;
+  width: 40%;
+  margin-right: 10px;
+  padding: 20px 0;
+  vertical-align: top;
+  text-align: justify;
+}
+
+.bibliography {
+  padding: 15px;
+  color: black;
+}
+
+.bibliography li {
+  list-style-type: none;
+  color: black;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
 }
