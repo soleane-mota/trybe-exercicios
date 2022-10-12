@@ -11,7 +11,7 @@ h1, nav {
 }
 
 p {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 header {
@@ -27,18 +27,23 @@ a {
 
 nav a{
   font-weight: bold;
-  color: crimson;
+  color: rgb(214, 51, 51);
   padding-left: 20px;
   /* border: 1px solid black;  */
 }
 
 aside {
   background-color:blue;
-  margin: 10px;
-  padding: 20px;
+  margin: 20px 0;
+  padding: 30px;
+  text-align: center;
   width: 200px;
   display: inline-block;
   vertical-align: top;
+}
+
+#stomatopoda {
+  width: 100%;
 }
 
 aside a{
@@ -53,13 +58,13 @@ main {
 }
 
 article {
-  width: 66%;
+  width: 70%;
   display: inline-block;
   margin-top: 20px;
 }
 
 h2, h3 {
-  margin: 0 0 20px;
+  margin: 0 0 10px;
 }
 
 img {
@@ -75,14 +80,12 @@ img {
   text-align: justify;
 }
 
-.bibliography {
-  padding: 15px;
-  color: black;
-}
-
 .bibliography li {
   list-style-type: none;
-  color: black;
+}
+
+.bibliography {
+  padding: 15px;
 }
 
 footer {
