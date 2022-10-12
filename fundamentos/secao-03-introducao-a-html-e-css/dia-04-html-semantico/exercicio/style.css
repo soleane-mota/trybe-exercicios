@@ -1,0 +1,96 @@
+* {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+h1, nav {
+  margin: 0 0 10px;
+  padding: 10px 30px 0;
+  /* border: 1px solid black; */
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+header {
+  background-color: aqua;
+  color:blue;
+  padding-bottom: 1px;
+  /* border: 1px solid black; */
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a{
+  font-weight: bold;
+  color: rgb(214, 51, 51);
+  padding-left: 20px;
+  /* border: 1px solid black;  */
+}
+
+aside {
+  background-color:blue;
+  margin: 20px 0;
+  padding: 30px;
+  text-align: center;
+  width: 200px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#stomatopoda {
+  width: 100%;
+}
+
+aside a{
+  color: white;
+  font-size: x-large;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 30px;
+  flex-grow: 1;
+}
+
+article {
+  width: 70%;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+h2, h3 {
+  margin: 0 0 10px;
+}
+
+img {
+  width: 300px;
+}
+
+.curiosity {
+  display: inline-block;
+  width: 40%;
+  margin-right: 10px;
+  padding: 20px 0;
+  vertical-align: top;
+  text-align: justify;
+}
+
+.bibliography li {
+  list-style-type: none;
+}
+
+.bibliography {
+  padding: 15px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
