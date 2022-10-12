@@ -1,0 +1,31 @@
+* {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+h1, nav {
+  margin: 0px 0 10px;
+  padding: 10px 30px 0;
+  /* border: 1px solid black; */
+}
+
+/* p {
+  margin-bottom: 5px;
+} */
+
+header {
+  background-color: aqua;
+  color:blue;
+  padding-bottom: 1px;;
+  /* border: 1px solid black; */
+}
+
+nav a{
+  text-decoration: none;
+  font-weight: bold;
+  color: crimson;
+  padding-left: 20px;
+  /* border: 1px solid black;  */
+}
+
