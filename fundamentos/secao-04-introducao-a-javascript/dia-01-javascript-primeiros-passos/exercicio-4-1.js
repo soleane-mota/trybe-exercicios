@@ -179,3 +179,36 @@ if (valorDeVenda < 0 || custo < 0) {
 	const ganhoEm1000 = lucro * 1000;
 	console.log(ganhoEm1000);
 }
+
+// Utilize if/else para fazer um programa que, dado um salário bruto, calcule o líquido a ser recebido.
+
+const salarioBruto = 3000;
+let salarioLiquido = null;
+let ir = null;
+let inss = null;
+
+if (salarioBruto <= 1556.94) {
+	inss = salarioBruto * 0.08;
+} else if (salarioBruto >= 1556.95 && salarioBruto <= 2594.92) {
+	inss = salarioBruto * 0.09;
+} else if (salarioBruto >= 2594.93 && salarioBruto <= 5189.82) {
+	inss = salarioBruto * 0.11;
+} else {
+	inss = 570.88;
+}
+
+if ((salarioBruto - inss) <= 1903.98) {
+	ir = 0;
+} else if ((salarioBruto - inss) >= 1903.99 && (salarioBruto - inss) <= 2826.65) {
+	ir = ((salarioBruto - inss) * 0.075) - 142.8;
+} else if ((salarioBruto - inss) >= 2826.66 && (salarioBruto - inss) <= 3751.05) {
+	ir = ((salarioBruto - inss) * 0.15) - 354.8;
+} else if ((salarioBruto - inss) >= 3751.06 && (salarioBruto - inss) <= 4664.68) {
+	ir = ((salarioBruto - inss) * 0.225) - 636.13;
+} else {
+	ir = ((salarioBruto - inss) * 0.275) - 869.36;
+}
+
+salarioLiquido = salarioBruto - inss - ir;
+
+console.log(salarioLiquido);
